@@ -1,0 +1,58 @@
+/* ==========================
+   Custom Colors
+========================== */
+.primary-color { 
+  color: #754ef9; 
+}
+.bg-primary { 
+  background-color: #754ef9; 
+}
+.hover-bg-primary:hover { 
+  background-color: #622cd1; 
+}
+
+/* ==========================
+   Text & Link Effects
+========================== */
+.hover-primary:hover { 
+  color: #754ef9; 
+}
+
+/* ==========================
+   Glowing Name in Hero
+========================== */
+.glow {
+  text-shadow: 0 0 5px #754ef9, 0 0 10px #754ef9, 0 0 20px #754ef9, 0 0 40px #754ef9;
+  transition: text-shadow 0.3s ease-in-out;
+}
+.glow:hover {
+  text-shadow: 0 0 10px #754ef9, 0 0 20px #754ef9, 0 0 40px #754ef9, 0 0 80px #754ef9;
+}
+
+/* ==========================
+   General Enhancements
+========================== */
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* ==========================
+   Contact Form Styling
+========================== */
+input, textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #754ef9;
+  box-shadow: 0 0 5px #754ef9;
+  outline: none;
+}

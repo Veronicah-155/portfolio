@@ -1,58 +1,57 @@
-/* ==========================
-   Custom Colors
-========================== */
-.primary-color { 
-  color: #754ef9; 
-}
-.bg-primary { 
-  background-color: #754ef9; 
-}
-.hover-bg-primary:hover { 
-  background-color: #622cd1; 
+:root {
+  --primary: linear-gradient(90deg, #FFBD00, #F0941F, #03A64A, #009110);
 }
 
-/* ==========================
-   Text & Link Effects
-========================== */
-.hover-primary:hover { 
-  color: #754ef9; 
+.primary-color {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* ==========================
-   Glowing Name in Hero
-========================== */
+.bg-primary {
+  background: var(--primary);
+}
+
+.hover-bg-primary:hover {
+  background: var(--primary);
+  color: #fff !important;
+}
+
+.hover-primary {
+  transition: color 0.3s ease;
+}
+
+.hover-primary:hover {
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .glow {
-  text-shadow: 0 0 5px #754ef9, 0 0 10px #754ef9, 0 0 20px #754ef9, 0 0 40px #754ef9;
-  transition: text-shadow 0.3s ease-in-out;
-}
-.glow:hover {
-  text-shadow: 0 0 10px #754ef9, 0 0 20px #754ef9, 0 0 40px #754ef9, 0 0 80px #754ef9;
-}
-
-/* ==========================
-   General Enhancements
-========================== */
-html {
-  scroll-behavior: smooth;
+  background: var(--primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s infinite linear;
 }
 
-button {
-  transition: background-color 0.3s ease, transform 0.2s ease;
+@keyframes shimmer {
+  0% { filter: brightness(1); }
+  50% { filter: brightness(1.6); }
+  100% { filter: brightness(1); }
 }
 
-button:hover {
-  transform: translateY(-2px);
-}
-
-/* ==========================
-   Contact Form Styling
-========================== */
-input, textarea {
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-input:focus, textarea:focus {
-  border-color: #754ef9;
-  box-shadow: 0 0 5px #754ef9;
+.input-field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  background-color: #111;
+  border: 1px solid #333;
+  border-radius: 0.75rem;
+  color: white;
   outline: none;
+  transition: 0.3s;
+}
+
+.input-field:focus {
+  border-color: #03A64A;
+  box-shadow: 0 0 10px #03A64A33;
 }

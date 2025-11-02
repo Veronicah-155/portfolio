@@ -4,23 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Veronicah Njuguna | Portfolio</title>
-  
+
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Fa icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-  <!-- AOS animations -->
+  <!-- AOS Animations -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
+  <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-900 text-white font-sans">
+
+<body class="bg-[#034001] text-white font-sans">
 
   <!-- Navbar -->
-  <header class="fixed top-0 left-0 w-full bg-gray-900/80 backdrop-blur-md shadow-md z-50">
+  <header class="fixed top-0 left-0 w-full bg-[#011900]/80 backdrop-blur-md shadow-md z-50">
     <nav class="container mx-auto flex justify-between items-center py-4 px-6">
       <h1 class="text-2xl font-bold primary-color">Veronicah Wambui Njuguna.</h1>
       <ul class="hidden md:flex space-x-8 text-lg">
@@ -33,161 +34,102 @@
     </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <!-- Hero -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-[#034001]">
     <h2 class="text-4xl md:text-6xl font-extrabold mb-4">
       Hi, I’m <span class="glow">Veronicah Njuguna.</span>
     </h2>
-    <p id="typing" class="text-lg md:text-2xl text-gray-300 h-8 mb-6"></p>
+    <p id="typing" class="text-lg md:text-2xl text-[#F0941F] h-8 mb-6"></p>
     <div class="flex space-x-4">
-      <a href="#projects" class="px-6 py-3 text-white rounded-lg shadow bg-primary hover-bg-primary transition">
+      <a href="#projects" class="px-6 py-3 text-white rounded-lg shadow bg-[#03A64A] hover:bg-[#009110] transition">
         View Projects
       </a>
-      <a href="#contact" class="px-6 py-3 border border-[#754ef9] text-[#754ef9] rounded-lg hover:bg-primary hover:text-gray-900 transition">
+      <a href="#contact" class="px-6 py-3 border border-[#F0941F] text-[#F0941F] rounded-lg hover:bg-[#FFBD00] hover:text-gray-900 transition">
         Contact Me
       </a>
     </div>
   </section>
 
-  <!-- About Me -->
-  <section id="about" class="py-20 bg-gray-800 px-6" data-aos="fade-up">
-  <div class="container mx-auto flex flex-col md:flex-row items-center md:space-x-16">
-    
-    <!-- Profile Image -->
-    <div class="flex-1 mb-10 md:mb-0 flex justify-center"> 
-      <img src="assets/profile.jpg" alt="Veronicah Njuguna" 
-           class="rounded-2xl shadow-2xl w-full max-w-sm md:max-w-md mx-auto border-4 border-[#754ef9] hover:scale-105 hover:shadow-[#754ef9]/50 transition duration-500 ease-in-out">
+  <!-- About -->
+  <section id="about" class="py-20 bg-[#011900] px-6" data-aos="fade-up">
+    <div class="container mx-auto flex flex-col md:flex-row items-center md:space-x-16">
+      <div class="flex-1 mb-10 md:mb-0 flex justify-center">
+        <img src="assets/profile.jpg" alt="Veronicah Njuguna"
+             class="rounded-2xl shadow-2xl w-full max-w-sm md:max-w-md mx-auto border-4 border-[#03A64A] hover:scale-105 hover:shadow-[#03A64A]/50 transition duration-500 ease-in-out">
+      </div>
+      <div class="flex-1 text-center md:text-left">
+        <h2 class="text-3xl md:text-4xl font-extrabold primary-color mb-6 tracking-wide">👩‍💻 About Me</h2>
+        <p class="text-[#FFBD00] text-lg leading-relaxed mb-6">
+          I’m <span class="font-semibold text-white">Veronicah Njuguna</span>, a creative and passionate 
+          <span class="text-[#F0941F]">Fullstack Developer</span> who loves building scalable, beautiful digital experiences.
+        </p>
+        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+          I develop web and mobile applications with a focus on performance, clean design, and seamless user experience.
+        </p>
+        <a href="assets/Veronicah_Njuguna_CV.pdf" 
+           class="inline-block px-6 py-3 bg-[#03A64A] text-white rounded-lg shadow-md hover:bg-[#009110] transition-all duration-300">
+          📄 Download CV
+        </a>
+      </div>
     </div>
-    
-    <!-- About Content -->
-    <div class="flex-1 text-center md:text-left">
-      <h2 class="text-3xl md:text-4xl font-extrabold primary-color mb-6 tracking-wide">
-        👩‍💻 About Me
-      </h2>
-      <p class="text-gray-300 text-lg leading-relaxed mb-6">
-        I’m <span class="font-semibold text-white">Veronicah Njuguna</span>, a passionate 
-        <span class="primary-color">Web Developer</span> with 2 years of experience building responsive, user-focused websites and mobile applications. I specialize in turning ideas into functional digital products using modern web technologies and clean, efficient code.
-      </p>
-      <p class="text-gray-300 text-lg leading-relaxed mb-6">
-        My core strengths lie in frontend development, UI implementation, and creating smooth user experiences. I enjoy transforming designs into fully interactive interfaces that are both visually appealing and performance-driven.
-      </p>
-      <p class="text-gray-300 text-lg leading-relaxed mb-8">
-        I’m always exploring better ways to write code, optimize performance, and stay up to date with emerging technologies. My goal is to build digital solutions that are not only beautiful but also scalable and impactful.
-      </p>
-      <a href="assets/Veronicah_Njuguna_CV.pdf" 
-         class="inline-block px-6 py-3 bg-primary text-white rounded-lg shadow-md hover-bg-primary hover:shadow-lg hover:shadow-[#754ef9]/40 transition-all duration-300">
-        📄 Download CV
-      </a>
-    </div>
-  </div>
-</section>
-
+  </section>
 
   <!-- Skills -->
-  <section id="skills" class="py-20 bg-gray-900 px-6" data-aos="fade-up">
+  <section id="skills" class="py-20 bg-[#034001] px-6" data-aos="fade-up">
     <div class="container mx-auto text-center">
       <h2 class="text-3xl md:text-4xl font-bold primary-color mb-12">Skills</h2>
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-10">
-        <div class="flex flex-col items-center space-y-3">
-          <i class="devicon-html5-plain text-6xl text-orange-500"></i>
-          <p class="text-gray-300">HTML5</p>
-        </div>
-        <div class="flex flex-col items-center space-y-3">
-          <i class="devicon-css3-plain text-6xl text-blue-500"></i>
-          <p class="text-gray-300">CSS3</p>
-        </div>
-        <div class="flex flex-col items-center space-y-3">
-          <i class="devicon-javascript-plain text-6xl text-yellow-400"></i>
-          <p class="text-gray-300">JavaScript</p>
-        </div>
-        <div class="flex flex-col items-center space-y-3">
-          <i class="devicon-php-plain text-6xl text-indigo-400"></i>
-          <p class="text-gray-300">PHP</p>
-        </div>
-        <div class="flex flex-col items-center space-y-3">
-          <i class="devicon-mysql-plain text-6xl text-blue-400"></i>
-          <p class="text-gray-300">MySQL</p>
-        </div>
-        <div class="flex flex-col items-center space-y-3">
-          <i class="devicon-flutter-plain text-6xl text-[#754ef9]"></i>
-          <p class="text-gray-300">Flutter</p>
-        </div>
+        <div><i class="devicon-html5-plain text-6xl text-[#FFBD00]"></i><p class="mt-3 text-white">HTML5</p></div>
+        <div><i class="devicon-css3-plain text-6xl text-[#F0941F]"></i><p class="mt-3 text-white">CSS3</p></div>
+        <div><i class="devicon-javascript-plain text-6xl text-[#03A64A]"></i><p class="mt-3 text-white">JavaScript</p></div>
+        <div><i class="devicon-php-plain text-6xl text-[#009110]"></i><p class="mt-3 text-white">PHP</p></div>
+        <div><i class="devicon-mysql-plain text-6xl text-[#FFBD00]"></i><p class="mt-3 text-white">MySQL</p></div>
+        <div><i class="devicon-flutter-plain text-6xl text-[#03A64A]"></i><p class="mt-3 text-white">Flutter</p></div>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="py-20 bg-gray-800 px-6" data-aos="fade-up">
+  <section id="projects" class="py-20 bg-[#011900] px-6" data-aos="fade-up">
     <div class="container mx-auto text-center">
-      <h2 class="text-3xl md:text-4xl font-bold primary-color mb-12">Projects</h2>
-      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
-        
-      </div>
+      <h2 class="text-3xl md:text-4xl font-bold primary-color mb-12">Client Projects</h2>
+      <div id="projectsGrid" class="grid gap-10 md:grid-cols-2 lg:grid-cols-3"></div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-<section id="contact" class="py-20 px-6 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900" data-aos="fade-up">
-  <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+  <!-- Contact -->
+  <section id="contact" class="py-20 px-6 bg-[#034001]" data-aos="fade-up">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <div class="bg-[#013D0A] rounded-2xl shadow-lg p-10 border border-[#03A64A] text-center md:text-left">
+        <h2 class="text-3xl font-bold primary-color mb-2">VERONICAH NJUGUNA</h2>
+        <p class="text-[#F0941F] text-lg">Fullstack & Mobile Developer | UI/UX Designer</p>
+        <p class="mt-6 text-white">📧 njugunaveronicah86@gmail.com</p>
+        <p class="text-white">📞 +254 700 317 884</p>
+      </div>
 
-    <!-- Contact Details -->
-    <div class="bg-gray-800 rounded-2xl shadow-lg p-10 flex flex-col justify-center space-y-6 text-center md:text-left border border-gray-700">
-      <h2 class="text-3xl font-bold primary-color mb-2">VERONICAH NJUGUNA</h2>
-      <p class="text-gray-400 text-lg">Web Developer || Mobile App Developer</p>
-      
-      <div class="mt-6 space-y-2">
-        <p class="font-semibold text-gray-400 uppercase tracking-wide">Email</p>
-        <p class="text-white hover:underline cursor-pointer">njugunaveronicah86@gmail.com</p>
-      </div>
-      
-      <div class="mt-4 space-y-2">
-        <p class="font-semibold text-gray-400 uppercase tracking-wide">Phone</p>
-        <p class="text-white">+254 700317884</p>
-      </div>
+      <form action="mailto:njugunaveronicah86@gmail.com" method="POST" enctype="text/plain"
+            class="bg-[#013D0A] rounded-2xl shadow-lg p-10 border border-[#03A64A] space-y-6">
+        <h2 class="text-3xl font-bold primary-color mb-6 text-center md:text-left">Get In Touch</h2>
+        <input type="text" name="name" placeholder="Your Name" required class="input-field">
+        <input type="email" name="email" placeholder="Your Email" required class="input-field">
+        <textarea name="message" rows="5" placeholder="Your Message" required class="input-field"></textarea>
+        <button type="submit" class="w-full py-3 bg-[#03A64A] text-white rounded-xl shadow-lg hover:bg-[#009110] transition font-semibold">
+          Send Message
+        </button>
+      </form>
     </div>
-
-    <!-- Contact Form -->
-    <form action="mailto:njugunaveronicah86@gmail.com" method="POST" enctype="text/plain" class="bg-gray-800 rounded-2xl shadow-lg p-10 space-y-6 border border-gray-700">
-      <h2 class="text-3xl font-bold primary-color mb-6 text-center md:text-left">Get In Touch</h2>
-      
-      <input type="text" name="name" placeholder="Your Name" required
-        class="w-full px-5 py-3 rounded-xl bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-[#754ef9] outline-none transition">
-      
-      <input type="email" name="email" placeholder="Your Email" required
-        class="w-full px-5 py-3 rounded-xl bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-[#754ef9] outline-none transition">
-      
-      <textarea name="message" rows="5" placeholder="Your Message" required
-        class="w-full px-5 py-3 rounded-xl bg-gray-900 text-white placeholder-gray-400 focus:ring-2 focus:ring-[#754ef9] outline-none transition"></textarea>
-      
-      <button type="submit" class="w-full py-3 bg-primary text-white rounded-xl shadow-lg hover:bg-[#622cd1] transition font-semibold">
-        Send Message
-      </button>
-    </form>
-
-  </div>
-</section>
-
-
-
+  </section>
 
   <!-- Footer -->
-<footer class="bg-gray-900 py-6 text-center text-gray-500">
-  <div class="mb-4">
-    <a href="https://github.com/Veronicah-155" target="_blank" class="mx-2 text-gray-400 hover-primary">
-      <i class="fa-brands fa-github"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/veronicah-njuguna" target="_blank" class="mx-2 text-gray-400 hover-primary">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="mailto:njugunaveronicah86@gmail.com" class="mx-2 text-gray-400 hover-primary">
-      <i class="fa-solid fa-envelope"></i>
-    </a>
-  </div>
-  © 2025 Veronicah Njuguna. All rights reserved.
-</footer>
+  <footer class="bg-[#011900] py-6 text-center text-[#F0941F]">
+    <div class="mb-4">
+      <a href="https://github.com/Veronicah-155" target="_blank" class="mx-2 text-[#FFBD00] hover:text-[#03A64A] transition"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/veronicah-njuguna" target="_blank" class="mx-2 text-[#FFBD00] hover:text-[#03A64A] transition"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="mailto:njugunaveronicah86@gmail.com" class="mx-2 text-[#FFBD00] hover:text-[#03A64A] transition"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    © 2025 Veronicah Njuguna. All rights reserved.
+  </footer>
 
-
-  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>

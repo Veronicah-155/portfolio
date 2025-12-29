@@ -1,6 +1,10 @@
-// Typing Effect
-const texts = ["Fullstack Developer 💻", "Mobile Developer 📱", "UI/UX Designer 🎨"];
-let i = 0, j = 0;
+const texts = [
+  "Fullstack Developer 💻",
+  "Android Developer 📱",
+  "UI/UX Designer 🎨",
+];
+let i = 0,
+  j = 0;
 let isDeleting = false;
 
 function type() {
@@ -23,64 +27,98 @@ function type() {
 
 const projects = [
   {
+    id: "anchor-global",
     title: "Anchor Global Website UI",
-    description: "Figma design for corporate website with team and contact sections.",
+    description:
+      "A comprehensive Figma design for a corporate website featuring modern layouts, team showcases, and contact sections.",
     image: "assets/anchor.png",
     type: "ui/ux",
-    link: "https://www.figma.com/file/YourFigmaProjectID"
+    link: "https://www.figma.com/proto/yeqT0fVqyywivFWvJv6oVa/Anchor-Global?node-id=0-1&t=u0rn6x8Kvj2pUbLI-1",
+    icon: "figma",
   },
   {
-    title: "AI Moderation Script",
-    description: "A Node.js-based AI text generator with content moderation. It checks prompts and responses for harmful content before displaying safe results. Built using OpenRouter API.",
-    image: "assets/ai-moderation.png",
-    type: "AI Engineer",
-    link: "https://github.com/Veronicah-155/ai-moderation-script"
+    id: "kitenge-mobile",
+    title: "E-commerce Android App",
+    description:
+      "A Flutter-based mobile e-commerce app for African fashion. Features product browsing, cart management, user authentication, and a seamless shopping experience.",
+    image: "assets/android.jpeg",
+    type: "android",
+    link: "https://github.com/Veronicah-155/flutter_ecommerce_app",
+    icon: "github",
   },
   {
+    id: "kitenge-closet",
     title: "E-commerce Website",
-    description: "Kitenge Closet is an e-commerce platform showcasing African fashion, offering seamless browsing, detailed product views, and a smooth checkout experience.",
+    description:
+      "Kitenge Closet is an e-commerce platform showcasing African fashion, offering seamless browsing, detailed product views, and a smooth checkout experience.",
     image: "assets/Kitenge.png",
     type: "fullstack",
-    link: "https://github.com/Veronicah-155/Kitenge-Closet"
-  }
+    link: "https://github.com/Veronicah-155/Kitenge-Closet",
+    icon: "github",
+  },
 ];
-
 
 const projectsGrid = document.getElementById("projectsGrid");
 
 projects.forEach((proj) => {
   let badge = "";
   if (proj.type === "fullstack") badge = "🌐 Fullstack Developer";
-  else if (proj.type === "mobile") badge = "📱 Mobile Developer";
+  else if (proj.type === "android") badge = "📱 Android Developer";
   else if (proj.type === "ui/ux") badge = "🎨 UI/UX Designer";
 
-  const card = document.createElement("div");
+  let iconClass = "";
+  let buttonText = "View Project";
+  if (proj.icon === "figma") {
+    iconClass = "fab fa-figma";
+    buttonText = "View Figma";
+  } else if (proj.icon === "github") {
+    iconClass = "fab fa-github";
+    buttonText = "View GitHub";
+  } else if (proj.icon === "canva") {
+    iconClass = "fas fa-palette";
+    buttonText = "View on Canva";
+  } else {
+    iconClass = "fas fa-external-link-alt";
+    buttonText = "View Project";
+  }
 
+  const card = document.createElement("div");
   card.className =
-    "bg-[#013D0A] rounded-2xl shadow-lg p-10 border border-[#03A64A] text-center md:text-left";
+    "bg-[#013D0A] rounded-2xl shadow-lg p-8 border border-[#03A64A] hover:border-[#F0941F] transition-all duration-300 transform hover:scale-105";
 
   card.innerHTML = `
-    <h2 class="text-3xl font-bold primary-color mb-2">${proj.title}</h2>
-    <p class="text-[#F0941F] text-lg">${proj.role1 || ""}</p>
-    <p class="text-[#F0941F] text-lg">${proj.role2 || ""}</p>
-    <p class="text-[#F0941F] text-lg">${proj.role3 || ""}</p>
+    <div class="mb-4">
+      <span class="inline-block bg-[#011900] border border-[#03A64A] text-[#F0941F] px-3 py-1 rounded-full text-xs font-semibold">
+        ${badge}
+      </span>
+    </div>
+    
+    <h3 class="text-2xl font-bold primary-color mb-4">${proj.title}</h3>
 
-    <img src="${proj.image}"
-         alt="${proj.title}"
-         class="rounded-lg mt-6 mb-4 w-full h-48 object-cover">
+    <div class="relative overflow-hidden rounded-lg mb-4 group">
+      <img src="${proj.image}"
+           alt="${proj.title}"
+           class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-500">
+      <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+    </div>
 
-    <p class="mt-4 text-white">${proj.description}</p>
+    <p class="text-gray-300 mb-6 line-clamp-3">${proj.description}</p>
 
-    <a href="${proj.link}" 
-       target="_blank" 
-       class="inline-block mt-6 bg-[#03A64A] text-white px-5 py-2 rounded-lg hover:bg-[#028b3e] transition">
-       View Project
-    </a>
+    <div class="flex gap-3">
+      <a href="project-detail.html?id=${proj.id}" 
+         class="flex-1 text-center bg-[#03A64A] text-white px-4 py-2 rounded-lg hover:bg-[#028b3e] transition font-semibold">
+         View Details
+      </a>
+      <a href="${proj.link}" 
+         target="_blank" 
+         class="flex items-center justify-center bg-[#011900] text-[#F0941F] px-4 py-2 rounded-lg border border-[#F0941F] hover:bg-[#F0941F] hover:text-white transition">
+         <i class="${iconClass}"></i>
+      </a>
+    </div>
   `;
 
   projectsGrid.appendChild(card);
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
   type();

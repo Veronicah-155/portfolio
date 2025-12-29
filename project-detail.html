@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Details | Veronicah Njuguna</title>
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body class="bg-[#034001] text-white font-sans">
+    <!-- Navbar -->
+    <header
+      class="fixed top-0 left-0 w-full bg-[#011900]/80 backdrop-blur-md shadow-md z-50"
+    >
+      <nav
+        class="container mx-auto flex justify-between items-center py-4 px-6"
+      >
+        <h1 class="text-2xl font-bold primary-color">
+          <a href="index.html">Veronicah Wambui Njuguna.</a>
+        </h1>
+        <ul class="hidden md:flex space-x-8 text-lg">
+          <li><a href="index.html#home" class="hover-primary">Home</a></li>
+          <li><a href="index.html#about" class="hover-primary">About</a></li>
+          <li><a href="index.html#skills" class="hover-primary">Skills</a></li>
+          <li><a href="index.html#projects" class="hover-primary">Projects</a></li>
+          <li><a href="index.html#contact" class="hover-primary">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Back Button -->
+    <div class="container mx-auto px-6 pt-28 pb-6">
+      
+       <a href="index.html#projects"
+        class="inline-flex items-center text-[#F0941F] hover:text-[#FFBD00] transition"
+      >
+        <i class="fas fa-arrow-left mr-2"></i> Back to Projects
+      </a>
+    </div>
+
+    <!-- Project Detail Content -->
+    <main class="container mx-auto px-6 pb-20">
+      <div id="projectContent" class="space-y-12">
+        <!-- Content will be dynamically loaded here -->
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#011900] py-6 text-center text-[#F0941F]">
+      <div class="mb-4">
+        
+          <a href="https://github.com/Veronicah-155"
+          target="_blank"
+          class="mx-2 text-[#FFBD00] hover:text-[#03A64A] transition"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        
+          <a href="https://www.linkedin.com/in/veronicah-njuguna"
+          target="_blank"
+          class="mx-2 text-[#FFBD00] hover:text-[#03A64A] transition"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        
+          <a href="mailto:njugunaveronicah86@gmail.com"
+          class="mx-2 text-[#FFBD00] hover:text-[#03A64A] transition"
+          ><i class="fa-solid fa-envelope"></i
+        ></a>
+      </div>
+      © 2025 Veronicah Njuguna. All rights reserved.
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="projects-data.js"></script>
+    <script src="project-detail.js"></script>
+  </body>
+</html>

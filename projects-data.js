@@ -97,8 +97,8 @@ const projectsData = {
 
   "student-profile": {
   title: "Student Profile Card UI",
-  type: "frontend",
-  badge: "💻 Frontend Developer",
+  type: "ui/ux",
+    badge: "🎨 UI/UX Designer",
   description:
     "A clean and responsive student profile card built with HTML and CSS, showcasing personal details, skills, and call-to-action buttons.",
   fullDescription:
@@ -115,7 +115,7 @@ const projectsData = {
     "Action buttons for interaction",
   ],
   screenshots: [
-    "assets/student.jpeg",
+    "assets/student.jpg",
   ],
   github: "https://github.com/veronicah-155/profile-card-ui",
   liveDemo: "https://veronicah-155.github.io/profile-card-ui/",
@@ -123,8 +123,8 @@ const projectsData = {
 
 "login-signup": {
   title: "Login & Signup UI",
-  type: "frontend",
-  badge: "🔐 Frontend Developer",
+  type: "ui/ux",
+  badge: "🎨 UI/UX Designer",
   description:
     "A responsive authentication interface featuring login and signup pages built using HTML and CSS.",
   fullDescription:
@@ -146,6 +146,31 @@ const projectsData = {
   ],
   github: "https://github.com/veronicah-155/modern-auth-ui",
   liveDemo: null,
+},
+
+"course-facebook-ads": {
+  title: "Course Facebook Ad",
+  type: "ui/ux",
+  badge: "🎨 UI/UX Designer",
+  description:
+    "A set of conversion-focused Facebook ad creatives designed in Canva for an online course campaign, applying UI/UX principles to improve clarity and engagement.",
+  fullDescription:
+    "This project involved designing high-performing Meta ad creatives for an online course. Using Canva, I applied UI/UX principles such as visual hierarchy, contrast, readability, and clear messaging to ensure the course value was instantly understood. The designs were optimized for multiple Facebook placements while maintaining brand consistency and visual appeal.",
+  technologies: ["Canva", "UI/UX Design", "Visual Design"],
+  challenge:
+    "The key challenge was communicating the course value clearly within a limited ad space while keeping the design visually engaging and aligned with Meta ad best practices.",
+  solution:
+    "I structured the layouts with strong hierarchy, bold headlines, and clear call-to-action elements while ensuring accessibility and readability across mobile and desktop placements.",
+  features: [
+    "UI/UX-optimized ad layouts",
+    "Mobile-first visual design",
+    "Clear visual hierarchy and messaging",
+  ],
+  screenshots: [
+    "assets/Facebook.png",
+  ],
+  github: "",
+  liveDemo: ""
 },
 
 };

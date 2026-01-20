@@ -40,7 +40,7 @@ const projects = [
     id: "kitenge-mobile",
     title: "E-commerce Android App",
     description:
-      "A Flutter-based mobile e-commerce app for African fashion. Features product browsing, cart management, user authentication, and a seamless shopping experience.",
+      "A Flutter mobile e-commerce app for African fashion. Features product browsing, cart management, user authentication, and a seamless shopping experience.",
     image: "assets/android.jpeg",
     type: "android",
     link: "https://github.com/Veronicah-155/flutter_ecommerce_app",
@@ -55,6 +55,36 @@ const projects = [
     type: "fullstack",
     link: "https://github.com/Veronicah-155/Kitenge-Closet",
     icon: "github",
+  },
+  {
+    id: "student-profile",
+    title: "Student Profile Card UI",
+    description:
+      "A clean and responsive student profile card built with HTML and CSS, showcasing personal details, skills, and call-to-action buttons.",
+    image: "assets/student.jpg",
+    type: "ui/ux",
+    link: "https://github.com/veronicah-155/student-profile-card",
+    icon: "github",
+  },
+  {
+    id: "login-signup",
+    title: "Login & Signup UI",
+    description:
+      "A responsive authentication interface featuring login and signup pages built using HTML and CSS and has added design.",
+    image: "assets/login.jpeg",
+    type: "ui/ux",
+    link: "https://github.com/veronicah-155/login-signup-ui",
+    icon: "github",
+  },
+  {
+    id: "course-facebook-ads",
+    title: "Course Facebook Ad",
+    description:
+      "UI/UX-optimized Facebook ad designed in Canva for an online course campaign, focusing on clarity, hierarchy, and conversion-driven visuals.",
+    image: "assets/Facebook.png",
+    type: "ui/ux",
+    link: "",
+    icon: "canva",
   },
 ];
 

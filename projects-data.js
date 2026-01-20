@@ -24,7 +24,7 @@ const projectsData = {
       "assets/anchor2.png",
     ],
     github: "https://www.figma.com/proto/yeqT0fVqyywivFWvJv6oVa/Anchor-Global?node-id=0-1&t=u0rn6x8Kvj2pUbLI-1",
-    liveDemo: null,
+    liveDemo: "https://www.figma.com/proto/yeqT0fVqyywivFWvJv6oVa/Anchor-Global?node-id=1-2&p=f&t=C3XeOBXLZjXhBKnb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
   },
 
   "kitenge-mobile": {
@@ -92,8 +92,62 @@ const projectsData = {
       "assets/Kitenge2.png",
     ],
     github: "https://github.com/Veronicah-155/Kitenge-Closet",
-    liveDemo: null,
+    liveDemo: "https://kitenge-closet.netlify.app",
   },
+
+  "student-profile": {
+  title: "Student Profile Card UI",
+  type: "frontend",
+  badge: "💻 Frontend Developer",
+  description:
+    "A clean and responsive student profile card built with HTML and CSS, showcasing personal details, skills, and call-to-action buttons.",
+  fullDescription:
+    "The Student Profile Card is a frontend UI project focused on creating a visually appealing and well-structured profile component. It includes sections for personal information, skills, and action buttons, all styled with modern CSS techniques. The project emphasizes clean layout, readability, and component-based design suitable for portfolios or user dashboards.",
+  technologies: ["HTML5", "CSS3", "Responsive Design"],
+  challenge:
+    "The main challenge was organizing multiple content sections within a compact card layout while maintaining clarity and visual balance.",
+  solution:
+    "I used a structured HTML layout combined with flexible CSS styling to clearly separate content sections. Consistent spacing, typography, and reusable class names helped maintain a clean and scalable design.",
+  features: [
+    "Clean card-based UI layout",
+    "Personal information and skills section",
+    "Reusable skill tags",
+    "Action buttons for interaction",
+  ],
+  screenshots: [
+    "assets/student.jpeg",
+  ],
+  github: "https://github.com/veronicah-155/profile-card-ui",
+  liveDemo: "https://veronicah-155.github.io/profile-card-ui/",
+},
+
+"login-signup": {
+  title: "Login & Signup UI",
+  type: "frontend",
+  badge: "🔐 Frontend Developer",
+  description:
+    "A responsive authentication interface featuring login and signup pages built using HTML and CSS.",
+  fullDescription:
+    "The Login & Signup UI project focuses on designing clean and user-friendly authentication pages. It includes separate login and signup screens with form inputs, social login buttons, and clear call-to-action elements. The design emphasizes accessibility, visual hierarchy, and responsiveness, making it suitable for modern web applications.",
+  technologies: ["HTML5", "CSS3", "UI Design"],
+  challenge:
+    "Designing authentication pages that are both visually appealing and intuitive while maintaining consistency across different screens.",
+  solution:
+    "I created a shared styling system using reusable CSS classes and consistent spacing. The layouts were structured to guide users naturally through the authentication flow.",
+  features: [
+    "Login and signup pages",
+    "Clean and modern UI design",
+    "Reusable button and form styles",
+    "Responsive layout structure",
+  ],
+  screenshots: [
+    "assets/login.jpeg",
+    "assets/signup.jpeg",
+  ],
+  github: "https://github.com/veronicah-155/modern-auth-ui",
+  liveDemo: null,
+},
+
 };
 
 // Function to get project by ID

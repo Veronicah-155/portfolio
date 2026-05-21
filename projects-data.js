@@ -1,3 +1,7 @@
+/* ================================================
+   Projects Data
+   ================================================ */
+
 const projectsData = {
   "anchor-global": {
     title: "Anchor Global Website UI",
@@ -23,42 +27,42 @@ const projectsData = {
       "assets/anchor1.png",
       "assets/anchor2.png",
     ],
-    github: "https://www.figma.com/proto/yeqT0fVqyywivFWvJv6oVa/Anchor-Global?node-id=0-1&t=u0rn6x8Kvj2pUbLI-1",
-    liveDemo: "https://www.figma.com/proto/yeqT0fVqyywivFWvJv6oVa/Anchor-Global?node-id=1-2&p=f&t=C3XeOBXLZjXhBKnb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
+    github:
+      "https://www.figma.com/proto/yeqT0fVqyywivFWvJv6oVa/Anchor-Global?node-id=0-1&t=u0rn6x8Kvj2pUbLI-1",
+    liveDemo:
+      "https://www.figma.com/proto/yeqT0fVqyywivFWvJv6oVa/Anchor-Global?node-id=1-2&p=f&t=C3XeOBXLZjXhBKnb-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
   },
 
   "kitenge-mobile": {
-  title: "E-commerce Android App",
-  type: "Android Developer",
-  badge: "📱 Android App",
-  description:
-    "A Flutter-based mobile e-commerce app for African fashion, focused on smooth shopping, secure authentication, and an intuitive user experience.",
-  fullDescription:
-    "Kitenge Closet is a modern Android e-commerce application built with Flutter, designed to showcase and sell African fashion. The app allows users to browse products, manage their cart, authenticate securely, and enjoy a seamless shopping experience optimized for performance and usability.",
-  technologies: [
-    "Flutter",
-    "Dart",
-    "Firebase Authentication",
-    "State Management",
-    "REST APIs",
-  ],
-  challenge:
-    "Building a smooth and responsive mobile shopping experience while ensuring secure user authentication and efficient state management.",
-  solution:
-    "I leveraged Flutter’s widget system and efficient state management to create a fast, intuitive UI, while integrating secure authentication and clean architecture for scalability.",
-  features: [
-    "Product browsing and listing",
-    "Cart management",
-    "User authentication",
-    "Responsive mobile UI",
-    "Smooth navigation and checkout flow",
-  ],
-  screenshots: [
-    "assets/android.jpeg",
-  ],
-  github: "https://github.com/Veronicah-155/flutter_ecommerce_app",
-  liveDemo: null,
-},
+    title: "E-commerce Android App",
+    type: "android",
+    badge: "📱 Android App",
+    description:
+      "A Flutter-based mobile e-commerce app for African fashion, focused on smooth shopping, secure authentication, and an intuitive user experience.",
+    fullDescription:
+      "Kitenge Closet is a modern Android e-commerce application built with Flutter, designed to showcase and sell African fashion. The app allows users to browse products, manage their cart, authenticate securely, and enjoy a seamless shopping experience optimized for performance and usability.",
+    technologies: [
+      "Flutter",
+      "Dart",
+      "Firebase Authentication",
+      "State Management",
+      "REST APIs",
+    ],
+    challenge:
+      "Building a smooth and responsive mobile shopping experience while ensuring secure user authentication and efficient state management.",
+    solution:
+      "I leveraged Flutter's widget system and efficient state management to create a fast, intuitive UI, while integrating secure authentication and clean architecture for scalability.",
+    features: [
+      "Product browsing and listing",
+      "Cart management",
+      "User authentication",
+      "Responsive mobile UI",
+      "Smooth navigation and checkout flow",
+    ],
+    screenshots: ["assets/android.jpeg"],
+    github: "https://github.com/Veronicah-155/flutter_ecommerce_app",
+    liveDemo: null,
+  },
 
   "kitenge-closet": {
     title: "Kitenge Closet E-commerce",
@@ -68,12 +72,7 @@ const projectsData = {
       "An e-commerce platform showcasing African fashion, offering seamless browsing, detailed product views, and a smooth checkout experience.",
     fullDescription:
       "Kitenge Closet is a full-featured e-commerce platform dedicated to African fashion. The platform provides users with an immersive shopping experience, featuring high-quality product imagery, detailed descriptions, size guides, and a streamlined checkout process. Built with modern web technologies, it offers responsive design and smooth performance across all devices.",
-    technologies: [
-      "HTML5",
-      "CSS3",
-      "JavaScript",
-      "Responsive Design",
-    ],
+    technologies: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
     challenge:
       "Creating an engaging shopping experience that highlights the unique beauty of African fashion while ensuring fast page loads and secure transactions.",
     solution:
@@ -83,7 +82,7 @@ const projectsData = {
       "Detailed product pages with image galleries",
       "Shopping cart with real-time updates",
       "Secure checkout process",
-      "Responsive design for android shopping",
+      "Responsive design for mobile shopping",
       "User account management",
     ],
     screenshots: [
@@ -96,86 +95,108 @@ const projectsData = {
   },
 
   "student-profile": {
-  title: "Student Profile Card UI",
-  type: "ui/ux",
+    title: "Student Profile Card UI",
+    type: "ui/ux",
     badge: "🎨 UI/UX Designer",
-  description:
-    "A clean and responsive student profile card built with HTML and CSS, showcasing personal details, skills, and call-to-action buttons.",
-  fullDescription:
-    "The Student Profile Card is a frontend UI project focused on creating a visually appealing and well-structured profile component. It includes sections for personal information, skills, and action buttons, all styled with modern CSS techniques. The project emphasizes clean layout, readability, and component-based design suitable for portfolios or user dashboards.",
-  technologies: ["HTML5", "CSS3", "Responsive Design"],
-  challenge:
-    "The main challenge was organizing multiple content sections within a compact card layout while maintaining clarity and visual balance.",
-  solution:
-    "I used a structured HTML layout combined with flexible CSS styling to clearly separate content sections. Consistent spacing, typography, and reusable class names helped maintain a clean and scalable design.",
-  features: [
-    "Clean card-based UI layout",
-    "Personal information and skills section",
-    "Reusable skill tags",
-    "Action buttons for interaction",
-  ],
-  screenshots: [
-    "assets/student.jpg",
-  ],
-  github: "https://github.com/veronicah-155/profile-card-ui",
-  liveDemo: "https://veronicah-155.github.io/profile-card-ui/",
-},
+    description:
+      "A clean and responsive student profile card built with HTML and CSS, showcasing personal details, skills, and call-to-action buttons.",
+    fullDescription:
+      "The Student Profile Card is a frontend UI project focused on creating a visually appealing and well-structured profile component. It includes sections for personal information, skills, and action buttons, all styled with modern CSS techniques. The project emphasizes clean layout, readability, and component-based design suitable for portfolios or user dashboards.",
+    technologies: ["HTML5", "CSS3", "Responsive Design"],
+    challenge:
+      "The main challenge was organizing multiple content sections within a compact card layout while maintaining clarity and visual balance.",
+    solution:
+      "I used a structured HTML layout combined with flexible CSS styling to clearly separate content sections. Consistent spacing, typography, and reusable class names helped maintain a clean and scalable design.",
+    features: [
+      "Clean card-based UI layout",
+      "Personal information and skills section",
+      "Reusable skill tags",
+      "Action buttons for interaction",
+    ],
+    screenshots: ["assets/student.jpg"],
+    github: "https://github.com/veronicah-155/profile-card-ui",
+    liveDemo: "https://veronicah-155.github.io/profile-card-ui/",
+  },
 
-"login-signup": {
-  title: "Login & Signup UI",
-  type: "ui/ux",
-  badge: "🎨 UI/UX Designer",
-  description:
-    "A responsive authentication interface featuring login and signup pages built using HTML and CSS.",
-  fullDescription:
-    "The Login & Signup UI project focuses on designing clean and user-friendly authentication pages. It includes separate login and signup screens with form inputs, social login buttons, and clear call-to-action elements. The design emphasizes accessibility, visual hierarchy, and responsiveness, making it suitable for modern web applications.",
-  technologies: ["HTML5", "CSS3", "UI Design"],
-  challenge:
-    "Designing authentication pages that are both visually appealing and intuitive while maintaining consistency across different screens.",
-  solution:
-    "I created a shared styling system using reusable CSS classes and consistent spacing. The layouts were structured to guide users naturally through the authentication flow.",
-  features: [
-    "Login and signup pages",
-    "Clean and modern UI design",
-    "Reusable button and form styles",
-    "Responsive layout structure",
-  ],
-  screenshots: [
-    "assets/login.jpeg",
-    "assets/signup.jpeg",
-  ],
-  github: "https://github.com/veronicah-155/modern-auth-ui",
-  liveDemo: null,
-},
+  "login-signup": {
+    title: "Login & Signup UI",
+    type: "ui/ux",
+    badge: "🎨 UI/UX Designer",
+    description:
+      "A responsive authentication interface featuring login and signup pages built using HTML and CSS.",
+    fullDescription:
+      "The Login & Signup UI project focuses on designing clean and user-friendly authentication pages. It includes separate login and signup screens with form inputs, social login buttons, and clear call-to-action elements. The design emphasizes accessibility, visual hierarchy, and responsiveness, making it suitable for modern web applications.",
+    technologies: ["HTML5", "CSS3", "UI Design"],
+    challenge:
+      "Designing authentication pages that are both visually appealing and intuitive while maintaining consistency across different screens.",
+    solution:
+      "I created a shared styling system using reusable CSS classes and consistent spacing. The layouts were structured to guide users naturally through the authentication flow.",
+    features: [
+      "Login and signup pages",
+      "Clean and modern UI design",
+      "Reusable button and form styles",
+      "Responsive layout structure",
+    ],
+    screenshots: ["assets/login.jpeg", "assets/signup.jpeg"],
+    github: "https://github.com/veronicah-155/modern-auth-ui",
+    liveDemo: null,
+  },
 
-"course-facebook-ads": {
-  title: "Course Facebook Ad",
-  type: "ui/ux",
-  badge: "🎨 UI/UX Designer",
-  description:
-    "A set of conversion-focused Facebook ad creatives designed in Canva for an online course campaign, applying UI/UX principles to improve clarity and engagement.",
-  fullDescription:
-    "This project involved designing high-performing Meta ad creatives for an online course. Using Canva, I applied UI/UX principles such as visual hierarchy, contrast, readability, and clear messaging to ensure the course value was instantly understood. The designs were optimized for multiple Facebook placements while maintaining brand consistency and visual appeal.",
-  technologies: ["Canva", "UI/UX Design", "Visual Design"],
-  challenge:
-    "The key challenge was communicating the course value clearly within a limited ad space while keeping the design visually engaging and aligned with Meta ad best practices.",
-  solution:
-    "I structured the layouts with strong hierarchy, bold headlines, and clear call-to-action elements while ensuring accessibility and readability across mobile and desktop placements.",
-  features: [
-    "UI/UX-optimized ad layouts",
-    "Mobile-first visual design",
-    "Clear visual hierarchy and messaging",
-  ],
-  screenshots: [
-    "assets/Facebook.png",
-  ],
-  github: "",
-  liveDemo: ""
-},
+  "course-facebook-ads": {
+    title: "Course Facebook Ad",
+    type: "ui/ux",
+    badge: "🎨 UI/UX Designer",
+    description:
+      "A set of conversion-focused Facebook ad creatives designed in Canva for an online course campaign, applying UI/UX principles to improve clarity and engagement.",
+    fullDescription:
+      "This project involved designing high-performing Meta ad creatives for an online course. Using Canva, I applied UI/UX principles such as visual hierarchy, contrast, readability, and clear messaging to ensure the course value was instantly understood. The designs were optimized for multiple Facebook placements while maintaining brand consistency and visual appeal.",
+    technologies: ["Canva", "UI/UX Design", "Visual Design"],
+    challenge:
+      "The key challenge was communicating the course value clearly within a limited ad space while keeping the design visually engaging and aligned with Meta ad best practices.",
+    solution:
+      "I structured the layouts with strong hierarchy, bold headlines, and clear call-to-action elements while ensuring accessibility and readability across mobile and desktop placements.",
+    features: [
+      "UI/UX-optimized ad layouts",
+      "Mobile-first visual design",
+      "Clear visual hierarchy and messaging",
+    ],
+    screenshots: ["assets/Facebook.png"],
+    github: "",
+    liveDemo: "https://canva.link/5nh1yowfw0z0z23",
+  },
 
+  "lichtpfad": {
+    title: "LichtPfad Website",
+    type: "fullstack",
+    badge: "🌐 Fullstack Developer",
+    description:
+      "A fullstack web platform connecting African professionals with German job and study opportunities, featuring job search, course search, and multilingual support.",
+    fullDescription:
+      "LichtPfad is a fullstack recruitment platform built to bridge the gap between African talent and German employers. The site features dynamic job and course search, service pages, multilingual toggling between English and German, and a structured employer/job-seeker flow — all built with a clean, professional UI.",
+    technologies: ["HTML", "CSS", "JavaScript", "PHP", "Responsive Design"],
+    challenge:
+      "Building a platform that clearly communicates a complex, multi-step recruitment process to two distinct audiences — job seekers and employers — while keeping the UI clean and accessible.",
+    solution:
+      "I structured the site with dedicated flows for each user type, clear service breakdowns, and a consistent visual language that builds trust and guides users toward action.",
+    features: [
+      "Job and course search functionality",
+      "Separate flows for job seekers and employers",
+      "Multilingual support (English / German)",
+      "Responsive, mobile-first layout",
+    ],
+    screenshots: [
+      "assets/lichtpfad-home.png",
+      "assets/lichtpfad-services.png",
+      "assets/lichtpfad-jobs.png",
+      "assets/lichtpfad-howitworks.png",
+      "assets/lichtpfad-contact.png",
+    ],
+    github: "",
+    liveDemo: "https://lichtpfadsw.com/",
+  },
 };
 
-// Function to get project by ID
+/* Helper used by project-detail.js */
 function getProjectById(id) {
   return projectsData[id] || null;
 }
